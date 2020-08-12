@@ -1,13 +1,13 @@
 <?php
-$arr = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 7, 7, 8, 8, 9, 9];
+$arr = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 14, 14];
 
-foreach ((Counting($arr)) as $k => $v) {
+foreach ((checkOut($arr)) as $k => $v) {
     if ($v <= 1) {
         echo $k . "<br>";
     }
 }
 
-function Counting($arr)
+function checkOut($arr)
 {
 
     return (array_count_values($arr));
